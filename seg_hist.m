@@ -1,5 +1,5 @@
 function img = seg_hist(img,k)
-
+% Segment the image based on histogram. we can define number ofv color (pin) k we desire in the output image. 
 low = min(img(:));
 hig = max(img(:));
 rang = double(hig-low);
