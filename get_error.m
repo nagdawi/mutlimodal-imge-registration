@@ -1,4 +1,12 @@
 function e = get_error(sz,h,v,r,cb_ref)
+%calculate root means square error (RMSE) between the ground-truth control points and estimated control points.
+%input: sz: floating image size
+%       Estimated transformation parameters of the floating image.
+%       h: horizontal 
+%       v: vertical 
+%       r: rotation
+%       cb_ref: ground-truth control points. which created manually mostly.
+%       Output: RMSE
 row = sz(1);
 col = sz(2);
 T = [1  0                 0;
